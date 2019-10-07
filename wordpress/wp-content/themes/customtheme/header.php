@@ -16,4 +16,7 @@
                    <?php cms_logo(); ?>
                    <?php cms_menu( 'primary-menu' ); ?>
               </header>
+              <div class="header-search">
+      <?php get_search_form(); ?>
+ </div>
 
