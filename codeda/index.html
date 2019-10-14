@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Navbar</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+        
+      
+        
+    </head>
+    <body>
+            <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img class="slide" src="images/h3-slider1-background-img.jpg" alt="slide1" width="100%"></div>
+                      <div class="swiper-slide"><img class="slide" src="images/h3-slider2-background-img.jpg" alt="slide1" width="100%"></div>
+                      <div class="swiper-slide"><img class="slide" src="images/h3-slider3-background-img.jpg" alt="slide1" width="100%"></div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+        <header>
+            <img class="logo" src="images/logo-dark.png" alt="logo">
+            <nav>
+                <ul class="nav__links">
+                    <li><a  class="home" href="#">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">About</a></li>
+                    <li>
+                        <div id="myOverlay" class="overlay">
+                            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                            <div class="overlay-content">
+                              <form action="/action_page.php">
+                                <input type="text" placeholder="Search.." name="search">
+                                <button type="submit"><i class="fas fa-search"></i></button>
+                              </form>
+                            </div>
+                          </div>
+                      </li>
+                      <button class="openBtn" onclick="openSearch()"><i class="fas fa-search"></i></button>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="#"></a><img src="images/sidearea-opener.png" width="50%"></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="move-page"><a onclick="reveal()"><i class="fas fa-chevron-down" width="170%"></i></a></div>
+        <div id="h">I'm the hidden part of the page</div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
